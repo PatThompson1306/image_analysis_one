@@ -1,0 +1,98 @@
+{
+    "modelVersion": "2023-10-01",
+    "metadata": {
+        "width": 239,
+        "height": 211
+    },
+    "tagsResult": {
+        "values": [
+            {
+                "name": "clothing",
+                "confidence": 0.9756773710250854
+            },
+            {
+                "name": "person",
+                "confidence": 0.9650327563285828
+            },
+            {
+                "name": "outdoor",
+                "confidence": 0.9554811716079712
+            },
+            {
+                "name": "building",
+                "confidence": 0.9169732928276062
+            },
+            {
+                "name": "leash",
+                "confidence": 0.9085018634796143
+            },
+            {
+                "name": "dog walking",
+                "confidence": 0.9043968915939331
+            },
+            {
+                "name": "collar",
+                "confidence": 0.8961519002914429
+            },
+            {
+                "name": "dog breed",
+                "confidence": 0.8927368521690369
+            },
+            {
+                "name": "footwear",
+                "confidence": 0.8675261735916138
+            },
+            {
+                "name": "dog",
+                "confidence": 0.8655690550804138
+            },
+            {
+                "name": "ground",
+                "confidence": 0.6253792643547058
+            },
+            {
+                "name": "street",
+                "confidence": 0.5827451348304749
+            },
+            {
+                "name": "sidewalk",
+                "confidence": 0.5821200609207153
+            }
+        ]
+    },
+    "objectsResult": {
+        "values": [
+            {
+                "boundingBox": {
+                    "x": 127,
+                    "y": 129,
+                    "w": 67,
+                    "h": 80
+                },
+                "tags": [
+                    {
+                        "name": "dog",
+                        "confidence": 0.501
+                    }
+                ]
+            },
+            {
+                "boundingBox": {
+                    "x": 52,
+                    "y": 5,
+                    "w": 63,
+                    "h": 192
+                },
+                "tags": [
+                    {
+                        "name": "person",
+                        "confidence": 0.54
+                    }
+                ]
+            }
+        ]
+    },
+    "readResult": {
+        "blocks": []
+    }
+}

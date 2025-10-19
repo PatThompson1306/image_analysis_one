@@ -1,5 +1,5 @@
 import asyncio
-#import os
+import json
 from azure.ai.vision.imageanalysis.aio import ImageAnalysisClient
 from azure.ai.vision.imageanalysis.models import VisualFeatures
 from azure.core.credentials import AzureKeyCredential
@@ -64,7 +64,14 @@ async def analyse_image():
         if result.tags:
             print("\nTags:")
             for tag in result.tags.list:
-                print(f"  - {tag.name} (confidence: {tag.confidence:.2f})")        
+                print(f"  - {tag.name} (confidence: {tag.confidence:.2f})")
+        
+        # Save the result as JSON
+        result_dict = result.as_dict()
+        with open("analysis_result.json", "w") as json_file:
+            json.dump(result_dict, json_file, indent=4)
+        print("\nAnalysis results saved to 'analysis_result.json'")
+        
         return result
 
 # Starts the async function
